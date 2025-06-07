@@ -155,6 +155,23 @@ h3 {
   gap: 10px;
 }
 
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    border: 1px solid rgba(149, 165, 166, 0.5);
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.contactText {
+    margin-bottom: 20px;
+}
+
 .poweredFooter {
   border: 1px solid red;
   grid-column-start: 1;
