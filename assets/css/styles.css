@@ -79,9 +79,11 @@ h3 {
   padding-bottom: 50px;
 }
 
-.headerImg {
+.headerImg,
+.mapImg {
   max-width: 100%;
   height: auto;
+  /* margin: auto; */
 }
 
 .mainLetterWrapper {
@@ -123,8 +125,8 @@ h3 {
 }
 
 .imgUser {
-    width: 100%;
-    filter: grayscale(1);
+  width: 100%;
+  filter: grayscale(1);
 }
 
 .textProfession {
@@ -155,21 +157,21 @@ h3 {
   gap: 10px;
 }
 
+.contactText {
+  margin-bottom: 20px;
+}
+
 .inputForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input {
-    border: 1px solid rgba(149, 165, 166, 0.5);
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-}
-
-.contactText {
-    margin-bottom: 20px;
+  border: 1px solid rgba(149, 165, 166, 0.5);
+  width: 100%;
+  height: 40px;
+  padding: 10px;
 }
 
 .poweredFooter {
