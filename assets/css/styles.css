@@ -5,7 +5,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr minmax(600px, 1500px) 1fr;
-  grid-template-rows: 100px minmax() minmax() 100px;
+  grid-template-rows: auto auto auto auto;
   font-family: Verdana, sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -16,6 +16,7 @@ body {
 
 h1 {
   font-size: 36px;
+  letter-spacing: 4px;
   /* font-weight: 400; */
   position: absolute;
 }
@@ -59,7 +60,6 @@ h3 {
 
 .navPanel {
   display: flex;
-  /* gap: 30px; */
 }
 
 .mainWrapper {
@@ -82,8 +82,6 @@ h3 {
 .headerImg {
   max-width: 100%;
   height: auto;
-  /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .mainLetterWrapper {
@@ -116,13 +114,37 @@ h3 {
 }
 
 .aboutContent {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .userCards {
   display: flex;
-
   gap: 20px;
+}
+
+.imgUser {
+    width: 100%;
+    filter: grayscale(1);
+}
+
+.textProfession {
+  color: #6c6c6c;
+  padding-bottom: 20px;
+}
+
+.textProfessionInfo {
+  padding-bottom: 20px;
+}
+
+.contactBtn {
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+}
+
+.contactBtn:hover {
+  background-color: rgba(149, 165, 166, 0.5);
 }
 
 .nameHouse {
@@ -143,8 +165,7 @@ h3 {
   background-color: black;
   color: white;
   text-align: center;
-  padding-top: 30px;
-  height: 80px;
+  padding: 30px;
 }
 
 .w3Footer {
