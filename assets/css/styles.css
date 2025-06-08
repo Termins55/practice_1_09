@@ -10,8 +10,6 @@ body {
   font-size: 15px;
   line-height: 1.5;
   position: relative;
-
-  min-height: 100vh;
 }
 
 h1 {
@@ -22,7 +20,7 @@ h1 {
 
 h3 {
   font-size: 24px;
-  padding: 16px 0 16px 0;
+  padding: 16px 0;
 }
 
 .grayLine {
@@ -83,11 +81,12 @@ h3 {
 .mapImg {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .mainLetterWrapper {
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
   font-weight: bolder;
 }
 
@@ -96,6 +95,7 @@ h3 {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+  transition-duration: 0.5s;
 }
 
 .sectHouse {
@@ -104,7 +104,7 @@ h3 {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   position: relative;
-  padding: 50px 0 0 0;
+  padding-top: 50px;
 }
 
 .imgHouseUser {
@@ -195,4 +195,51 @@ input {
 
 .w3Footer {
   color: white;
+}
+
+@media screen and (max-width: 1640px) {
+  .mainContainer {
+    padding: 0 30px;
+    transition-duration: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sectHouse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .userCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    display: block;
+  }
+
+  .sectHouse {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .userCards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .imgHouseUser,
+  .imgUser {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .navPanel,
+  .spanArchi {
+    display: none;
+  }
 }
