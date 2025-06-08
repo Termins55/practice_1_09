@@ -17,7 +17,6 @@ body {
 h1 {
   font-size: 36px;
   letter-spacing: 4px;
-  /* font-weight: 400; */
   position: absolute;
 }
 
@@ -26,8 +25,12 @@ h3 {
   padding: 16px 0 16px 0;
 }
 
+.grayLine {
+  padding-top: 50px;
+  border-bottom: 1px solid rgba(149, 165, 166, 0.5);
+}
+
 .navProject {
-  border: 1px solid red;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -63,12 +66,10 @@ h3 {
 }
 
 .mainWrapper {
-  border: 1px solid red;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,14 +77,12 @@ h3 {
   text-align: center;
   color: white;
   position: relative;
-  padding-bottom: 50px;
 }
 
 .headerImg,
 .mapImg {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  /* margin: auto; */
 }
 
 .mainLetterWrapper {
@@ -93,13 +92,10 @@ h3 {
 }
 
 .mainContainer {
-  border: 1px solid red;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  /* padding: 10px; */
-  /* margin: 20px; */
 }
 
 .sectHouse {
@@ -108,7 +104,7 @@ h3 {
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   position: relative;
-  padding-bottom: 50px;
+  padding: 50px 0 0 0;
 }
 
 .imgHouseUser {
@@ -116,7 +112,7 @@ h3 {
 }
 
 .aboutContent {
-  margin-bottom: 50px;
+  padding: 30px 0 50px 0;
 }
 
 .userCards {
@@ -158,7 +154,7 @@ h3 {
 }
 
 .contactText {
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .inputForm {
@@ -174,13 +170,23 @@ input {
   padding: 10px;
 }
 
+.messageBtn {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+
+.formBtn {
+  padding: 25px 0 50px 0;
+}
+
 .poweredFooter {
-  border: 1px solid red;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
-
   background-color: black;
   color: white;
   text-align: center;

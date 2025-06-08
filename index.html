@@ -17,23 +17,23 @@
   </head>
   <body>
     <nav class="navProject">
-      <a class="navProBtn" href=""
+      <a class="navProBtn" href="#brArchiId"
         ><span class="mainLetter">BR</span> Architects</a
       >
       <ul class="navPanel">
         <li>
-          <a class="navProBtn" href="">Projects</a>
+          <a class="navProBtn" href="#projectId">Projects</a>
         </li>
         <li>
-          <a class="navProBtn" href="">About</a>
+          <a class="navProBtn" href="#aboutId">About</a>
         </li>
         <li>
-          <a class="navProBtn" href="">Contact</a>
+          <a class="navProBtn" href="#contactId">Contact</a>
         </li>
       </ul>
     </nav>
 
-    <header class="mainWrapper">
+    <header id="brArchiId" class="mainWrapper">
       <img
         class="headerImg"
         src="/assets/images/architect.jpg"
@@ -43,7 +43,7 @@
     </header>
 
     <main class="mainContainer">
-      <div>
+      <div id="projectId" class="grayLine">
         <h3>Projects</h3>
       </div>
       <section class="sectHouse">
@@ -112,9 +112,10 @@
           />
         </div>
       </section>
-
-      <div>
-        <h3>About</h3>
+      <section>
+        <div id="aboutId" class="grayLine">
+          <h3>About</h3>
+        </div>
         <p class="aboutContent">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -126,7 +127,7 @@
           nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.
         </p>
-      </div>
+      </section>
       <article class="userCards">
         <div>
           <img class="imgUser" src="./assets/images/team2.jpg" alt="John Doe" />
@@ -170,19 +171,21 @@
         </div>
       </article>
       <section>
-        <h3>Contact</h3>
-        <div>
-          <p class="contactText">
-            Lets get in touch and talk about your next project.
-          </p>
+        <div id="contactId" class="grayLine">
+          <h3>Contact</h3>
         </div>
+        <p class="contactText">
+          Lets get in touch and talk about your next project.
+        </p>
         <form class="inputForm">
-          <input type="Name" placeholder="Name" />
-          <input type="Email" placeholder="Email" />
-          <input type="Subject" placeholder="Subject" />
-          <input type="Comment" placeholder="Comment" />
+          <input type="text" required placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Subject" />
+          <input type="text" placeholder="Comment" />
+          <div class="formBtn">
+            <button class="messageBtn" type="submit">SEND MESSAGE</button>
+          </div>
         </form>
-        <button>SEND MESSAGE</button>
       </section>
       <img class="mapImg" src="/assets/images/map.jpg" alt="map" />
     </main>
