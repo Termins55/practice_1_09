@@ -95,7 +95,7 @@ h3 {
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .sectHouse {
@@ -197,10 +197,14 @@ input {
   color: white;
 }
 
+.w3Footer:hover {
+  color: green;
+}
+
 @media screen and (max-width: 1640px) {
   .mainContainer {
     padding: 0 30px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
   }
 }
 
